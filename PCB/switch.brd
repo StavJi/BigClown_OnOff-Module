@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="6.25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="6.25" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -243,44 +243,6 @@ StavJi 2020</text>
 </package>
 </packages>
 </library>
-<library name="switch">
-<description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
-Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TL3XWO">
-<description>&lt;b&gt;TINY SWITCH&lt;/b&gt;&lt;p&gt;
-Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da-01-de-Subminiaturschalter_TL_36YO.pdf</description>
-<wire x1="-3.955" y1="3.5" x2="3.955" y2="3.5" width="0.2032" layer="21"/>
-<wire x1="3.955" y1="-4.425" x2="-3.955" y2="-4.425" width="0.2032" layer="51"/>
-<wire x1="-3.955" y1="-4.425" x2="-3.955" y2="3.5" width="0.2032" layer="21"/>
-<wire x1="3.955" y1="3.5" x2="3.955" y2="-4.425" width="0.2032" layer="21"/>
-<wire x1="-2.18" y1="9.2" x2="2.18" y2="9.2" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="4.295" x2="2.4" y2="4.295" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="4.295" x2="2.4" y2="3.595" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="3.62" x2="-2.4" y2="4.295" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="4.37" x2="-2.2" y2="9.195" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="4.345" x2="2.2" y2="9.195" width="0.2032" layer="21"/>
-<wire x1="0.95" y1="9.295" x2="1.15" y2="13.345" width="0.2032" layer="21"/>
-<wire x1="1.15" y1="13.345" x2="-1.15" y2="13.345" width="0.2032" layer="21" curve="185.655231"/>
-<wire x1="-1.15" y1="13.345" x2="-0.95" y2="9.295" width="0.2032" layer="21"/>
-<wire x1="-3.411" y1="-4.425" x2="-3.955" y2="-4.425" width="0.2032" layer="21"/>
-<wire x1="3.955" y1="-4.425" x2="3.411" y2="-4.425" width="0.2032" layer="21"/>
-<wire x1="-0.871" y1="-4.425" x2="-1.669" y2="-4.425" width="0.2032" layer="21"/>
-<wire x1="1.669" y1="-4.425" x2="0.871" y2="-4.425" width="0.2032" layer="21"/>
-<pad name="1" x="-2.54" y="-5.08" drill="1.1" diameter="1.4224" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-5.08" drill="1.1" diameter="1.4224" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-5.08" drill="1.1" diameter="1.4224" shape="long" rot="R90"/>
-<pad name="M1" x="-2.54" y="0" drill="1.1" diameter="1.6764" rot="R90"/>
-<pad name="M2" x="2.54" y="0" drill="1.1" diameter="1.6764" rot="R90"/>
-<text x="-4.318" y="-4.572" size="1.778" layer="25" rot="R90">&gt;NAME</text>
-<text x="6.35" y="-4.572" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.8" y1="-5.455" x2="-2.25" y2="-4.405" layer="51"/>
-<rectangle x1="-0.26" y1="-5.455" x2="0.29" y2="-4.405" layer="51"/>
-<rectangle x1="2.28" y1="-5.455" x2="2.83" y2="-4.405" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="pinhead">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -401,6 +363,48 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <rectangle x1="-14.224" y1="-0.254" x2="-13.716" y2="0.254" layer="51"/>
 <rectangle x1="-16.764" y1="-0.254" x2="-16.256" y2="0.254" layer="51"/>
 <rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="switch">
+<description>&lt;b&gt;Switches&lt;/b&gt;&lt;p&gt;
+Marquardt, Siemens, C&amp;K, ITT, and others&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SWITCH">
+<wire x1="-6.1775" y1="3.97625" x2="6.1775" y2="3.97625" width="0.2032" layer="21"/>
+<wire x1="6.1775" y1="-5.06" x2="-6.1775" y2="-5.06" width="0.2032" layer="51"/>
+<wire x1="-6.1775" y1="-5.06" x2="-6.1775" y2="3.97625" width="0.2032" layer="21"/>
+<wire x1="6.1775" y1="3.97625" x2="6.1775" y2="-5.06" width="0.2032" layer="21"/>
+<wire x1="-2.815" y1="10.94625" x2="2.815" y2="10.94625" width="0.2032" layer="21"/>
+<wire x1="-3.035" y1="4.77125" x2="3.035" y2="4.77125" width="0.2032" layer="21"/>
+<wire x1="3.035" y1="4.77125" x2="3.035" y2="4.07125" width="0.2032" layer="21"/>
+<wire x1="-3.035" y1="4.09625" x2="-3.035" y2="4.77125" width="0.2032" layer="21"/>
+<wire x1="-2.835" y1="4.84625" x2="-2.835" y2="10.94125" width="0.2032" layer="21"/>
+<wire x1="2.835" y1="4.82125" x2="2.835" y2="10.94125" width="0.2032" layer="21"/>
+<wire x1="0.95" y1="11.04125" x2="1.15" y2="15.09125" width="0.2032" layer="21"/>
+<wire x1="1.15" y1="15.09125" x2="-1.15" y2="15.09125" width="0.2032" layer="21" curve="185.655231"/>
+<wire x1="-1.15" y1="15.09125" x2="-0.95" y2="11.04125" width="0.2032" layer="21"/>
+<wire x1="-5.316" y1="-5.06" x2="-6.1775" y2="-5.06" width="0.2032" layer="21"/>
+<wire x1="6.1775" y1="-5.06" x2="5.316" y2="-5.06" width="0.2032" layer="21"/>
+<wire x1="-0.871" y1="-5.06" x2="-1.669" y2="-5.06" width="0.2032" layer="21"/>
+<wire x1="1.669" y1="-5.06" x2="0.871" y2="-5.06" width="0.2032" layer="21"/>
+<pad name="1" x="-4.445" y="-7.62" drill="1.6" diameter="3" rot="R90"/>
+<pad name="2" x="0" y="-7.62" drill="1.6" diameter="3" rot="R90"/>
+<pad name="3" x="4.445" y="-7.62" drill="1.6" diameter="3" rot="R90"/>
+<pad name="M1" x="-2.54" y="5.08" drill="1.6" diameter="3" rot="R90"/>
+<pad name="M2" x="2.54" y="5.08" drill="1.6" diameter="3" rot="R90"/>
+<text x="-6.5405" y="-4.572" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="8.41375" y="-4.572" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-4.705" y1="-7.83625" x2="-4.155" y2="-6.78625" layer="51"/>
+<rectangle x1="-0.26" y1="-7.83625" x2="0.29" y2="-6.78625" layer="51"/>
+<rectangle x1="4.185" y1="-6.09" x2="4.735" y2="-5.04" layer="51"/>
+<rectangle x1="-4.705" y1="-6.09" x2="-4.155" y2="-5.04" layer="51"/>
+<rectangle x1="-4.705" y1="-7.0425" x2="-4.155" y2="-5.9925" layer="51"/>
+<rectangle x1="-0.26" y1="-6.09" x2="0.29" y2="-5.04" layer="51"/>
+<rectangle x1="-0.26" y1="-7.0425" x2="0.29" y2="-5.9925" layer="51"/>
+<rectangle x1="4.185" y1="-7.83625" x2="4.735" y2="-6.78625" layer="51"/>
+<rectangle x1="4.185" y1="-7.0425" x2="4.735" y2="-5.9925" layer="51"/>
 </package>
 </packages>
 </library>
@@ -593,10 +597,6 @@ design rules under a new name.</description>
 <element name="JP1" library="bigclown" package="BC-MODULE-CORE-SMD-TOP-BOT" value="BC-MODULE-CORE" x="16.51" y="27.46375" smashed="yes">
 <attribute name="VALUE" x="16.51" y="26.46375" size="1.5" layer="27" align="center"/>
 </element>
-<element name="S1" library="switch" package="TL3XWO" value="7101MD9AQE" x="16.51" y="48.5775" smashed="yes">
-<attribute name="NAME" x="11.8745" y="51.562" size="1.27" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="22.86" y="44.0055" size="1.778" layer="27" rot="R90"/>
-</element>
 <element name="JP2" library="pinhead" package="1X14_WITHOUT_PAD" value="1-215297-4" x="3.81" y="27.46375" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.4737" y="47.0662" size="1.27" layer="25" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="6.985" y="9.68375" size="1.27" layer="27" rot="R90"/>
@@ -612,6 +612,10 @@ design rules under a new name.</description>
 <element name="JP5" library="pinhead" package="1X14_WITHOUT_PAD" value="2211SM-14G-B1-TB" x="29.21" y="27.46375" smashed="yes" rot="MR90">
 <attribute name="NAME" x="31.03245" y="7.8613" size="1.27" layer="26" font="vector" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="26.035" y="9.68375" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="S1" library="switch" package="SWITCH" value="TL32WOSWITCH" x="16.51" y="47.78375" smashed="yes">
+<attribute name="NAME" x="10.12825" y="53.1495" size="1.27" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="24.92375" y="43.21175" size="1.778" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -798,32 +802,18 @@ design rules under a new name.</description>
 <wire x1="24.4475" y1="10.95375" x2="26.67" y2="10.95375" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$32">
-<via x="12.54125" y="40.16375" extent="1-16" drill="1.3" diameter="2.5"/>
 <contactref element="JP1" pad="16B"/>
 <wire x1="31.75" y1="13.49375" x2="21.2725" y2="13.49375" width="1.27" layer="16"/>
-<wire x1="21.2725" y1="13.49375" x2="12.54125" y2="22.225" width="1.27" layer="16"/>
-<wire x1="12.54125" y1="40.16375" x2="12.54125" y2="22.225" width="1.27" layer="16"/>
+<wire x1="21.2725" y1="13.49375" x2="12.065" y2="22.70125" width="1.27" layer="16"/>
+<wire x1="12.065" y1="40.16375" x2="12.065" y2="22.70125" width="1.27" layer="16"/>
 <contactref element="S1" pad="1"/>
-<wire x1="12.54125" y1="40.16375" x2="12.54125" y2="42.06875" width="1.27" layer="16"/>
-<wire x1="12.54125" y1="42.06875" x2="13.97" y2="43.4975" width="1.27" layer="16"/>
 </signal>
 <signal name="N$33">
-<via x="16.51" y="40.16375" extent="1-16" drill="1.3" diameter="2.5"/>
 <contactref element="JP1" pad="16"/>
 <wire x1="31.75" y1="13.49375" x2="21.2725" y2="13.49375" width="1.27" layer="1"/>
 <wire x1="21.2725" y1="13.49375" x2="16.51" y2="18.25625" width="1.27" layer="1"/>
 <wire x1="16.51" y1="40.16375" x2="16.51" y2="18.25625" width="1.27" layer="1"/>
 <contactref element="S1" pad="2"/>
-<wire x1="16.51" y1="40.16375" x2="16.51" y2="43.4975" width="1.27" layer="1"/>
-</signal>
-<signal name="N$34">
-<via x="20.47875" y="40.16375" extent="1-16" drill="1.3" diameter="2.5"/>
-</signal>
-<signal name="N$29">
-<via x="13.97" y="52.86375" extent="1-16" drill="1.3" diameter="2.5"/>
-</signal>
-<signal name="N$30">
-<via x="19.05" y="52.86375" extent="1-16" drill="1.3" diameter="2.5"/>
 </signal>
 </signals>
 </board>
